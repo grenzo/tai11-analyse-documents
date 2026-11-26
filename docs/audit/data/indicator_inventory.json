@@ -1,0 +1,419 @@
+{
+  "documents": 43,
+  "per_source_campaign": {
+    "cti-2025": {
+      "documents": 11,
+      "distinct_codes_union": 581,
+      "distinct_normalized_codes_union": 123,
+      "codes_per_document_min": 163,
+      "codes_per_document_median": 384,
+      "codes_per_document_max": 566
+    },
+    "cti-2026": {
+      "documents": 18,
+      "distinct_codes_union": 584,
+      "distinct_normalized_codes_union": 123,
+      "codes_per_document_min": 205,
+      "codes_per_document_median": 389,
+      "codes_per_document_max": 572
+    },
+    "defi-2024": {
+      "documents": 1,
+      "distinct_codes_union": 69,
+      "distinct_normalized_codes_union": 69,
+      "codes_per_document_min": 69,
+      "codes_per_document_median": 69,
+      "codes_per_document_max": 69
+    },
+    "defi-2025": {
+      "documents": 7,
+      "distinct_codes_union": 63,
+      "distinct_normalized_codes_union": 63,
+      "codes_per_document_min": 63,
+      "codes_per_document_median": 63,
+      "codes_per_document_max": 63
+    },
+    "defi-2026": {
+      "documents": 6,
+      "distinct_codes_union": 61,
+      "distinct_normalized_codes_union": 61,
+      "codes_per_document_min": 61,
+      "codes_per_document_median": 61,
+      "codes_per_document_max": 61
+    }
+  },
+  "stability": {
+    "cti": {
+      "2025-2026": {
+        "jaccard": 0.988,
+        "jaccard_normalized": 0.984,
+        "normalized_common": 122,
+        "common": 579,
+        "only_2025": [
+          "II.1-D11-anglais",
+          "II.1-D7-7-0"
+        ],
+        "only_2026": [
+          "II.1-D1-7-0",
+          "II.1-D11-Exigence",
+          "II.1-D3-7-2",
+          "II.1-D3-7-3",
+          "II.1-D4-7-2"
+        ],
+        "label_changes_same_code": 114,
+        "label_changes_examples": [
+          {
+            "code": "I.14.c",
+            "label_2025": "",
+            "label_2026": "Réseau(x) d'appartenance, thématique ou de marque, de l'école",
+            "similarity": 0.0
+          },
+          {
+            "code": "I.17.a",
+            "label_2025": "et effectuant au moins le quart de leur service statutaire dans l'école. Les activités à prendre en compte correspondent",
+            "label_2026": "Nombre d'enseignants statutaires sans mission de recherche (personnes physiques) intervenant dans le suivi des activités",
+            "similarity": 0.33
+          },
+          {
+            "code": "I.17.b",
+            "label_2025": "des enseignements. (N.B : se référer aux heures données sur la maquette pour réaliser la(les) formation(s) d'ingénieur o",
+            "label_2026": "l'école. Nombre d'\"équivalents temps plein\" comptabilisés en 1.17.a.",
+            "similarity": 0.1
+          },
+          {
+            "code": "I.18.b",
+            "label_2025": "des enseignements. (N.B : se référer aux heures données sur la maquette pour réaliser la(les) formation(s) d'ingénieur o",
+            "label_2026": "vigueur dans leur établissement. Nombre d'\"équivalents temps plein\" dans l'enseignement et le suivi des enseignants-cher",
+            "similarity": 0.23
+          },
+          {
+            "code": "II.1-D1-10.a",
+            "label_2025": "",
+            "label_2026": "Montant maximum annuel obligatoire diplôme (hors CVEC) - euros",
+            "similarity": 0.0
+          },
+          {
+            "code": "II.1-D1-3",
+            "label_2025": "Matériaux produit chimique , Mécanique théorique , Physique , Caractéristiques du diplôme d'ingénieur (Mots clés) Calcul",
+            "label_2026": "Caractéristiques du diplôme d'ingénieur (Mots clés)",
+            "similarity": 0.6
+          },
+          {
+            "code": "II.1-D10-10.a",
+            "label_2025": "Montant maximum annuel obligatoire à la préparation du diplôme versé à l'école par 0 l'apprenant (hors CVEC - euros)",
+            "label_2026": "Montant maximum annuel obligatoire dû à l'école par l'apprenant communautaire pour la 628 préparation du diplôme (hors C",
+            "similarity": 0.59
+          },
+          {
+            "code": "II.1-D10-2",
+            "label_2025": "Engineering master degree from Higher Education Institution - Intitulé de ce diplôme en anglais Ecole polytechnique d’Un",
+            "label_2026": "Intitulé de ce diplôme en anglais Industrial ecology and Environment",
+            "similarity": 0.44
+          },
+          {
+            "code": "II.1-D10-4",
+            "label_2025": "",
+            "label_2026": "https://www.francecompetences.fr/recherche/rncp/40530/",
+            "similarity": 0.0
+          },
+          {
+            "code": "II.1-D10-Exigence",
+            "label_2025": "Site(s) où s'effectue la formation Marseille Marseille Marseille Nom du(des)",
+            "label_2026": "Nom du(des)",
+            "similarity": 0.25
+          },
+          {
+            "code": "II.1-D11-11",
+            "label_2025": "CVEC - euros) Oui Oui Oui",
+            "label_2026": "Formation labellisée EUR-ACE® Oui Oui Oui",
+            "similarity": 0.52
+          },
+          {
+            "code": "II.1-D11-2",
+            "label_2025": "Engineering master degree from Higher Education Institution - Intitulé de ce diplôme en anglais Ecole polytechnique d’Un",
+            "label_2026": "Intitulé de ce diplôme en anglais ENERGY AND INDUSTRY 4.0",
+            "similarity": 0.44
+          },
+          {
+            "code": "II.1-D11-3",
+            "label_2025": "électronique analogique et numérique , électronique radiofréquence , microélectronique , systèmes embarqués , traitement",
+            "label_2026": "",
+            "similarity": 0.0
+          },
+          {
+            "code": "II.1-D11-6",
+            "label_2025": "Voie Formation continue Durée d'accréditation",
+            "label_2026": "Voie",
+            "similarity": 0.16
+          },
+          {
+            "code": "II.1-D11-8.b",
+            "label_2025": "requis les tests certifiés les tests certifiés les tests certifiés",
+            "label_2026": "requis 2ème langue obligatoire",
+            "similarity": 0.31
+          }
+        ]
+      }
+    },
+    "defi": {
+      "2024-2025": {
+        "jaccard": 0.859,
+        "jaccard_normalized": 0.859,
+        "normalized_common": 61,
+        "common": 61,
+        "only_2024": [
+          "II.10",
+          "II.11",
+          "II.12",
+          "II.13",
+          "II.4",
+          "II.8",
+          "II.9",
+          "IX.5"
+        ],
+        "only_2025": [
+          "II.1",
+          "II.7"
+        ],
+        "label_changes_same_code": 11,
+        "label_changes_examples": [
+          {
+            "code": "I.1",
+            "label_2024": "Hommes 492 54 20 1 5 41 163 Femmes 191 12 13 4 39 63 Préparant un diplôme d'ingénieur Total 683 66 33 1 9 80 226",
+            "label_2025": "Préparant un diplôme Hommes 527 184 11 1 2 93 124 0 0 d'ingénieur Femmes 269 73 11 0 5 65 69 0 0 Total 796 257 22 1 7 15",
+            "similarity": 0.39
+          },
+          {
+            "code": "I.1.bis",
+            "label_2024": "Effectif dont étrangers dont étrangers boursiers dont dont total intracommunautairesextracommunautaires État (via appren",
+            "label_2025": "Répartition Homme/Femme en Hommes Femmes formation d'ingénieur 79.82 % 20.18 %",
+            "similarity": 0.18
+          },
+          {
+            "code": "II.2",
+            "label_2024": "recherche et enseignants- chercheurs affectés Laboratoires Nombre Dont évalués HCERES dont l'École (ou l'Établissement p",
+            "label_2025": "l'école ou affectés principalement à l'école Nombre de personnels dont l'école est l'employeur principal entreprise pour",
+            "similarity": 0.48
+          },
+          {
+            "code": "II.3",
+            "label_2024": "(BIATSS notamment) Nombre de brevets déposés par l'école seule ou en Sur les 3 dernières années (2021, 2022, 2023) dont ",
+            "label_2025": "Nombre de personnels des domaines technique et administratif impliqués dans les Cadre 0 activités de recherche dont Non ",
+            "similarity": 0.39
+          },
+          {
+            "code": "II.5",
+            "label_2024": "rang A de l'année 2023 attestable dans l'une des bases de données (parmi l'une des scopus soit Elsevier ou Google Liste ",
+            "label_2025": "(BIATSS notamment) Nombre de Start-up et Spin-off l'un de personnels",
+            "similarity": 0.28
+          },
+          {
+            "code": "III.1",
+            "label_2024": "Pour vos voies d'admission % de recrutés % de recrutés % de recrutés (Post-Prépa ou postbac), Concours commun X 100 Banq",
+            "label_2025": "Pour vos voies d'admission Niveau bac Niveau bac+2 Autres niveaux (bac+1, bac+3 et 4) (Post-Prépa ou postbac), % de recr",
+            "similarity": 0.56
+          },
+          {
+            "code": "IV.2",
+            "label_2024": "Temps consacré à des projets 670 par les étudiants Nombre de crédits ECTS associés à ces heures de projet prévues dans l",
+            "label_2025": "Nombre minimal d'heures de projet par étudiant (situation de travail) prévues dans la maquette pédagogique et nécessaire",
+            "similarity": 0.33
+          },
+          {
+            "code": "VI.4",
+            "label_2024": "Campus à l'étranger proposant Nom - pays En responsabilité totale En partage avec un établissement local des formations ",
+            "label_2025": "Campus à l'étranger proposant des formations d'ingénieur",
+            "similarity": 0.51
+          },
+          {
+            "code": "VI.5",
+            "label_2024": "Nom de vos l'établissement étudiants Doubles diplômes et diplômes (master, conjoints internationaux actifs MBA...) sur l",
+            "label_2025": "Ecole Nationale Des Sciences Ecole Appliquées de Fès d'ingénieur (ENSAF) École Nationale Supérieure d'Informatique et Ma",
+            "similarity": 0.17
+          },
+          {
+            "code": "VII.1",
+            "label_2024": "Volontariat International 1 1 2 1 1 2 Poursuite d'études (hors Situation professionnelle des thèse) diplômés En recherch",
+            "label_2025": "En volontariat (VIE, VIA, service civique) En thèse 0 3 3 1 3 4 Situation professionnelle des En études ou en formation ",
+            "similarity": 0.52
+          },
+          {
+            "code": "X.6",
+            "label_2024": "Dont droits d'inscription extracommunautaires (si différenciés) (en €) Ressources propres perçues au titre de la contrib",
+            "label_2025": "Ressources propres perçues au titre de la contribution unique à la formation professionnelle et à l'alternance (TA) Ress",
+            "similarity": 0.41
+          }
+        ]
+      },
+      "2024-2026": {
+        "jaccard": 0.831,
+        "jaccard_normalized": 0.831,
+        "normalized_common": 59,
+        "common": 59,
+        "only_2024": [
+          "II.10",
+          "II.11",
+          "II.12",
+          "II.13",
+          "II.8",
+          "II.9",
+          "IX.1",
+          "IX.2",
+          "IX.5",
+          "VIII.3"
+        ],
+        "only_2026": [
+          "II.1",
+          "II.7"
+        ],
+        "label_changes_same_code": 14,
+        "label_changes_examples": [
+          {
+            "code": "I.1",
+            "label_2024": "Hommes 492 54 20 1 5 41 163 Femmes 191 12 13 4 39 63 Préparant un diplôme d'ingénieur Total 683 66 33 1 9 80 226",
+            "label_2026": "Hommes 479 128 0 2 3 41 100 0 0 Préparant un diplôme Femmes 145 27 0 0 0 42 27 0 0 d'ingénieur Total 624 155 2 3 83 127",
+            "similarity": 0.55
+          },
+          {
+            "code": "II.2",
+            "label_2024": "recherche et enseignants- chercheurs affectés Laboratoires Nombre Dont évalués HCERES dont l'École (ou l'Établissement p",
+            "label_2026": "Nombre de personnels dont l'école est l'employeur principal entreprise pour effectuer des activités de R&D",
+            "similarity": 0.34
+          },
+          {
+            "code": "II.3",
+            "label_2024": "(BIATSS notamment) Nombre de brevets déposés par l'école seule ou en Sur les 3 dernières années (2021, 2022, 2023) dont ",
+            "label_2026": "Nombre de personnels des domaines technique et administratif impliqués dans les Cadre 13 activités de recherche dont Non",
+            "similarity": 0.4
+          },
+          {
+            "code": "II.4",
+            "label_2024": "Nombre de Start-up et Spin-off l'un de personnels Nombre de publications de",
+            "label_2026": "Nombre de brevets déposés par l'école seule ou en Sur les 3 dernières années (2023, 2024, 2025) dont 2025 uniquement cop",
+            "similarity": 0.19
+          },
+          {
+            "code": "II.5",
+            "label_2024": "rang A de l'année 2023 attestable dans l'une des bases de données (parmi l'une des scopus soit Elsevier ou Google Liste ",
+            "label_2026": "Nombre de Start-up et Spin-off l'un de personnels",
+            "similarity": 0.31
+          },
+          {
+            "code": "III.1",
+            "label_2024": "Pour vos voies d'admission % de recrutés % de recrutés % de recrutés (Post-Prépa ou postbac), Concours commun X 100 Banq",
+            "label_2026": "Pour vos voies d'admission Niveau bac Niveau bac+2 Autres niveaux (bac+1, bac+3 et 4) (Post-Prépa ou postbac), % de recr",
+            "similarity": 0.56
+          },
+          {
+            "code": "IV.2",
+            "label_2024": "Temps consacré à des projets 670 par les étudiants Nombre de crédits ECTS associés à ces heures de projet prévues dans l",
+            "label_2026": "Nombre minimal d'heures de projet par étudiant (situation de travail) prévues dans la maquette pédagogique et nécessaire",
+            "similarity": 0.33
+          },
+          {
+            "code": "VI.4",
+            "label_2024": "Campus à l'étranger proposant Nom - pays En responsabilité totale En partage avec un établissement local des formations ",
+            "label_2026": "Campus à l'étranger proposant des formations d'ingénieur",
+            "similarity": 0.51
+          },
+          {
+            "code": "VI.5",
+            "label_2024": "Nom de vos l'établissement étudiants Doubles diplômes et diplômes (master, conjoints internationaux actifs MBA...) sur l",
+            "label_2026": "Université du Québec à Maîtrise en Doubles diplômes et diplômes Chicoutimi Informatique conjoints internationaux (UQAC) ",
+            "similarity": 0.59
+          },
+          {
+            "code": "VII.1",
+            "label_2024": "Volontariat International 1 1 2 1 1 2 Poursuite d'études (hors Situation professionnelle des thèse) diplômés En recherch",
+            "label_2026": "En volontariat (VIE, VIA, service civique) En thèse 8 3 11 10 3 13 Situation professionnelle des En études ou en formati",
+            "similarity": 0.54
+          },
+          {
+            "code": "VIII.1",
+            "label_2024": "Nombre d'associations Total dont celles qui ont dans leurs objectifs le développement durable au sens des ODD définis pa",
+            "label_2026": "Nombre d'associations étudiantes ou clubs reconnus par l'école (sportives, Total dont celles qui ont dans leurs objectif",
+            "similarity": 0.56
+          },
+          {
+            "code": "VIII.5",
+            "label_2024": "Nombre de demandes de valorisation (reconnaissance + validation) d'engagement étudiant en 2022-2023",
+            "label_2026": "Nombre de demandes de étudiant en 2024-2025",
+            "similarity": 0.58
+          },
+          {
+            "code": "VIII.6",
+            "label_2024": "Places réservées en 0 résidences CROUS pour l'école Proportion d'élèves logés au CROUS (sur l'effectif total de l'École)",
+            "label_2026": "Places réservées en résidences CROUS pour l'école",
+            "similarity": 0.58
+          },
+          {
+            "code": "X.6",
+            "label_2024": "Dont droits d'inscription extracommunautaires (si différenciés) (en €) Ressources propres perçues au titre de la contrib",
+            "label_2026": "Ressources propres perçues au titre de la contribution unique à la formation professionnelle et à l'alternance (TA) Ress",
+            "similarity": 0.41
+          }
+        ]
+      },
+      "2025-2026": {
+        "jaccard": 0.938,
+        "jaccard_normalized": 0.938,
+        "normalized_common": 60,
+        "common": 60,
+        "only_2025": [
+          "IX.1",
+          "IX.2",
+          "VIII.3"
+        ],
+        "only_2026": [
+          "II.4"
+        ],
+        "label_changes_same_code": 6,
+        "label_changes_examples": [
+          {
+            "code": "I.1",
+            "label_2025": "Préparant un diplôme Hommes 527 184 11 1 2 93 124 0 0 d'ingénieur Femmes 269 73 11 0 5 65 69 0 0 Total 796 257 22 1 7 15",
+            "label_2026": "Hommes 479 128 0 2 3 41 100 0 0 Préparant un diplôme Femmes 145 27 0 0 0 42 27 0 0 d'ingénieur Total 624 155 2 3 83 127",
+            "similarity": 0.51
+          },
+          {
+            "code": "I.1.bis",
+            "label_2025": "Répartition Homme/Femme en Hommes Femmes formation d'ingénieur 79.82 % 20.18 %",
+            "label_2026": "Effectif dont étrangers dont étrangers boursiers boursiers boursiers dont dont total intracommunautairesextracommunautai",
+            "similarity": 0.17
+          },
+          {
+            "code": "II.1",
+            "label_2025": "chercheurs affectés dont l'École (ou l'Établissement pour les Écoles internes) est partenaire avec un autre établissemen",
+            "label_2026": "recherche et enseignants- chercheurs affectés Laboratoires Nombre Dont évalués HCERES dont l'école (ou l'établissement p",
+            "similarity": 0.45
+          },
+          {
+            "code": "VI.5",
+            "label_2025": "Ecole Nationale Des Sciences Ecole Appliquées de Fès d'ingénieur (ENSAF) École Nationale Supérieure d'Informatique et Ma",
+            "label_2026": "Université du Québec à Maîtrise en Doubles diplômes et diplômes Chicoutimi Informatique conjoints internationaux (UQAC) ",
+            "similarity": 0.35
+          },
+          {
+            "code": "VIII.5",
+            "label_2025": "Nombre de demandes de valorisation (reconnaissance + validation) d'engagement étudiant en 2023-2024",
+            "label_2026": "Nombre de demandes de étudiant en 2024-2025",
+            "similarity": 0.58
+          },
+          {
+            "code": "VIII.6",
+            "label_2025": "Places réservées en 44 résidences CROUS pour l'école Proportion d'élèves logés au CROUS (sur l'effectif total de l'École",
+            "label_2026": "Places réservées en résidences CROUS pour l'école",
+            "similarity": 0.58
+          }
+        ]
+      }
+    }
+  },
+  "cti_defi_overlap": {
+    "cti_codes_total": 538,
+    "defi_codes_total": 71,
+    "same_code_string": 23,
+    "label_matches_ge_0_75": 0,
+    "examples": []
+  }
+}
