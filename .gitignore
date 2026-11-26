@@ -1,0 +1,32 @@
+# Secrets (voir .env.example à partir de la phase 2)
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv*/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+dist/
+
+# Artefacts générés par le prototype (reconstructibles)
+/cti_defi_sections.sqlite*
+/semantic_schema.txt
+/table_embeddings.npy
+/table_entries.json
+/review_extraction.csv
+
+# Outils et caches locaux
+/.local-llm/
+docs/audit/runs/
+.DS_Store
+Thumbs.db
