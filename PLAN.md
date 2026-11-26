@@ -96,6 +96,12 @@ Le binôme B développe contre un **moteur simulé** qui renvoie des réponses e
 
 ## 6. Suivi
 
+Le suivi au jour le jour se fait sur GitHub :
+- l'issue épinglée [#26 — Feuille de route](https://github.com/grenzo/tai11-analyse-documents/issues/26) ;
+- une issue par lot (#11 à #25) et par action de l'équipe (#2 à #10) ;
+- les [jalons J1 à J10](https://github.com/grenzo/tai11-analyse-documents/milestones), datés ;
+- les labels `phase-*`, `lot-A`/`lot-B`, `prio-M`/`S`/`C` et `action-humaine`.
+
 | Phase | Statut | Date | Compte rendu |
 |---|---|---|---|
 | 0 — Audit | ✅ fait (mesure « avant » en attente de la clé Groq) | 26/11 | [docs/audit.md](docs/audit.md) |
