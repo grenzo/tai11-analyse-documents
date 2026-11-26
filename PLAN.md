@@ -1,6 +1,6 @@
 # PLAN — TAI 11 (26/11/2026 → 29/01/2027)
 
-> Version 0.1 du 26/11/2026, mise à jour à chaque fin de phase. Les réunions et rendus intermédiaires fixés par les encadrants (S. Ayache, J.-M. Latarjet) seront ajoutés ici dès qu'ils seront connus : **aucun n'est connu à ce jour**.
+> Version 0.1 du 26/11/2026, mise à jour à chaque fin de phase. Les réunions et rendus intermédiaires fixés par les encadrants (S. Ayache, J.-M. Latarjet) seront ajoutés ici dès qu'ils seront connus : **aucun n'est fixé à ce jour, et aucune technologie n'est imposée** (confirmé le 26/11/2026).
 
 ## 1. Jalons
 
@@ -76,7 +76,7 @@ Le binôme B développe contre un **moteur simulé** qui renvoie des réponses e
 
 | # | Risque | P | I | Signal d'alerte | Plan B |
 |---|---|---|---|---|---|
-| R1 | Pas de GPU, ni sur les postes ni sur le serveur : banc local très lent | E | M | Une question locale prend plus de 2 min | Machine GPU du département ou mésocentre AMU ; à défaut, petit modèle local (≈ 4 Mds) et matrice locale réduite |
+| R1 | Pas de GPU, ni sur les postes ni sur le serveur (**serveur confirmé sans GPU le 26/11**) : banc local très lent, mode local de production limité à un petit modèle | **certain** | M | Une question locale prend plus de 2 min | Banc local sur une machine GPU empruntée (mésocentre AMU, à demander dès S49) ; à défaut, petit modèle local (≈ 4 Mds) et matrice locale réduite ; en production, API gratuite par défaut et petit modèle local en secours |
 | R2 | Quotas gratuits trop bas ou modifiés (déjà constaté : 6 à 8 questions/jour pour le prototype) | E | M | Erreurs 429 répétées | Prompts ≤ 2 500 tokens (NF4), cache, plusieurs fournisseurs, sous-ensemble de questions pour les API |
 | R3 | Accès au serveur du département tardif ou impossible | M | E | Pas d'accès au 08/01 | Installation validée sur VM vierge ; démo sur machine portable ; procédure transmise à l'administrateur |
 | R4 | Régression de l'extraction lors du portage | M | M | Test oracle < 99,5 % | Les écarts sont expliqués un par un ; on garde la fonction du prototype telle quelle si besoin |
@@ -84,7 +84,7 @@ Le binôme B développe contre un **moteur simulé** qui renvoie des réponses e
 | R6 | Annotation du banc (150 à 200 questions, double validation) sous-estimée | E | E | < 100 questions au 03/01 | Gabarits de questions tirés du catalogue ; répartition sur les 4 personnes ; 150 au minimum |
 | R7 | Faible disponibilité pendant les vacances et les examens | E | M | — | Travail asynchrone sur les questions ; exécutions de nuit |
 | R8 | Données incohérentes dans les nouveaux PDF (campagnes, doublons) | M | M | Avertissements à l'ingestion | Contrôles F3/F4 et statut « à décider » |
-| R9 | Auteur du prototype indisponible | M | F | — | Audit et tests oracle suffisent pour reprendre l'extraction |
+| R9 | Auteur du prototype hors de l'équipe (joignable, confirmé le 26/11) | F | F | Pas de réponse sous une semaine | Questions regroupées en une fois (modèle local utilisé, cas limites des fiches) ; l'audit et le test oracle suffisent pour reprendre l'extraction |
 | R10 | Mesure « avant » incomplète (quota, clé) | M | M | < 20 questions au 04/12 | Relancer le script chaque jour ; sinon mesure sur un modèle local, avec mention explicite |
 | R11 | Fournisseur d'API qui modifie un modèle sans prévenir | M | M | `system_fingerprint` qui change | Identifiant et empreinte enregistrés ; exécutions de test regroupées le 24/01 |
 

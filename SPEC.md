@@ -42,12 +42,14 @@ Ces points ne sont ni dans le dépôt ni déductibles. Un défaut est retenu pou
 |---|---|---|---|
 | D1 | Types de documents | CTI et DEFI uniquement ; architecture à plugins pour en ajouter | Faible : nouveau plugin |
 | D2 | Écoles couvertes | Toutes les écoles des PDF importés ; le filtre « réseau Polytech » est une option (`dim_ecole.reseau_polytech`) | Faible |
-| D3 | Serveur | Linux x86-64 avec Docker et Docker Compose, 4 vCPU, 16 Go de RAM, **sans GPU**, nom DNS et HTTPS possibles, accès Internet sortant | Fort pour le mode local et le déploiement |
-| D4 | Authentification | Comptes locaux (argon2id) avec rôles admin / éditeur / lecteur ; CAS AMU branchable plus tard | Moyen |
+| D3 | Serveur | Linux x86-64 avec Docker et Docker Compose, **sans GPU** (**confirmé le 26/11/2026**) ; supposés, à confirmer : 4 vCPU, 16 Go de RAM, nom DNS et HTTPS possibles, accès Internet sortant | Fort pour le mode local et le déploiement |
+| D4 | Authentification | Comptes locaux (argon2id) avec rôles admin / éditeur / lecteur (**confirmé le 26/11/2026**) ; CAS AMU branchable plus tard | Moyen |
 | D5 | Budget | 0 € ; offres gratuites et modèles locaux (ADR 0002) | Moyen |
 | D6 | Langue | Interface, documentation et rapport en français | — |
 | D7 | Volume | Moins de 200 documents et 50 utilisateurs ; 20 utilisateurs simultanés au maximum | Faible |
 | D8 | Équipe | 2 binômes, environ 2 jours par semaine et par personne jusqu'au 24/01/2027 | Fort sur le périmètre (voir PLAN) |
+| D9 | Encadrants | Aucune technologie imposée, aucun rendu intermédiaire ni réunion fixés (**confirmé le 26/11/2026**) | Faible |
+| D10 | Auteur du prototype | Hors de l'équipe mais joignable pour les questions sur l'extraction (**confirmé le 26/11/2026**) | Faible |
 
 ## 5. Exigences fonctionnelles
 

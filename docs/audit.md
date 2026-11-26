@@ -329,7 +329,7 @@ Refonte ciblée, décrite et chiffrée dans l'**[ADR 0001](adr/0001-refonte-ou-r
 
 ## 8. Questions ouvertes issues de l'audit
 
-- Quel modèle de chat l'auteur chargeait-il dans llama.cpp (« Marche avec un LLM local ») ? Le paramètre `enable_thinking` laisse penser à un modèle Qwen3.
+- Quel modèle de chat l'auteur chargeait-il dans llama.cpp (« Marche avec un LLM local ») ? Le paramètre `enable_thinking` laisse penser à un modèle Qwen3. *À poser à l'auteur, hors de l'équipe mais joignable.*
 - Les fiches CTI 2025 de Clermont et de Dijon existent-elles (à récupérer sur le site de la CTI) ?
 - Faut-il conserver, dans la base, les données personnelles des fiches (nom du directeur ou de la directrice) ?
 
