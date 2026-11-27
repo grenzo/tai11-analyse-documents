@@ -1,0 +1,72 @@
+[
+  {
+    "cas": "légitime",
+    "sql": "SELECT school_key, year FROM cti_i_19 WHERE school_key = 'MARSEILLE'",
+    "accepte": true,
+    "motif_refus": null,
+    "execution": "exécutée en 0.02 s, 2 ligne(s)"
+  },
+  {
+    "cas": "légitime + REPLACE()",
+    "sql": "SELECT REPLACE(school_key, '_', ' ') AS ecole FROM cti_i_19",
+    "accepte": false,
+    "motif_refus": "Instruction SQL interdite : REPLACE",
+    "execution": "-"
+  },
+  {
+    "cas": "écriture DROP",
+    "sql": "DROP TABLE cti_i_19",
+    "accepte": false,
+    "motif_refus": "Seules les requêtes SELECT / WITH sont autorisées.",
+    "execution": "-"
+  },
+  {
+    "cas": "écriture cachée dans WITH",
+    "sql": "WITH x AS (SELECT 1) DELETE FROM cti_i_19",
+    "accepte": false,
+    "motif_refus": "Instruction SQL interdite : DELETE",
+    "execution": "-"
+  },
+  {
+    "cas": "deux instructions",
+    "sql": "SELECT 1 FROM cti_i_19; DELETE FROM cti_i_19",
+    "accepte": false,
+    "motif_refus": "Instruction SQL interdite : DELETE",
+    "execution": "-"
+  },
+  {
+    "cas": "lecture catalogue",
+    "sql": "SELECT name, sql FROM sqlite_master",
+    "accepte": true,
+    "motif_refus": null,
+    "execution": "exécutée en 0.00 s, 2737 ligne(s)"
+  },
+  {
+    "cas": "table hors sélection",
+    "sql": "SELECT * FROM documents",
+    "accepte": true,
+    "motif_refus": null,
+    "execution": "exécutée en 0.00 s, 43 ligne(s)"
+  },
+  {
+    "cas": "CTE récursive infinie",
+    "sql": "WITH RECURSIVE c(x) AS (SELECT 1 UNION ALL SELECT x + 1 FROM c) SELECT max(x) FROM c",
+    "accepte": true,
+    "motif_refus": null,
+    "execution": "INTERROMPUE par la sonde après 5 s (le prototype aurait attendu indéfiniment)"
+  },
+  {
+    "cas": "produit cartésien",
+    "sql": "SELECT count(*) FROM cti_i_19 a, cti_i_19 b, cti_i_19 c, cti_i_19 d, cti_i_19 e, cti_i_19 f",
+    "accepte": true,
+    "motif_refus": null,
+    "execution": "INTERROMPUE par la sonde après 5 s (le prototype aurait attendu indéfiniment)"
+  },
+  {
+    "cas": "allocation mémoire",
+    "sql": "SELECT length(zeroblob(500000000))",
+    "accepte": true,
+    "motif_refus": null,
+    "execution": "exécutée en 0.00 s, 1 ligne(s)"
+  }
+]
